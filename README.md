@@ -1,6 +1,6 @@
 # PHOENIX
 
-[sourceforge](sourceforge.net/projects/phoenix0/) page
+[sourceforge](http://sourceforge.net/projects/phoenix-0) page
 
 A simple program to show hours, date and computer infos, how your distro, architeture and processor.
 
