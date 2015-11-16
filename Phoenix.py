@@ -40,11 +40,11 @@ class Phoenix(object):
             #
             #
             #
-            self.topSoft = '     Programa que mostra janelas \n(widgets) com'
-            self.topSoft += 'informações sobre\no computador do usuário, e o horário'
+            self.topSoft = 'Programa que mostra janelas \n(widgets) com'
+            self.topSoft += ' informações sobre\no computador do usuário, e hora'
             self.topSoft += '\n\n'
             #
-            tk.Label(self.master, text=self.topSoft, font=('FreeSerif 14')).grid(row=0, columnspan=2)
+            tk.Label(self.master, text=self.topSoft, font=('FreeSerif 12')).grid(row=0, columnspan=2)
             #
             #
             tk.Button(self.master, text='Computador', command=self.__Computer__).grid(row=1, column=0)
@@ -58,6 +58,7 @@ class Phoenix(object):
             #
             self.master.config(menu=self.menuBar)
             #
+            self.master.wm_attributes("-topmost", 1)
             self.master.mainloop()
             #
         def __Computer__(self):

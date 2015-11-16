@@ -14,12 +14,12 @@ class Today(object):
             self.master = tk.Tk()
             self.master.title('Phoenix!')
             #
-            self.__tkLHora__ = tk.Label(self.master, text=self.HOURS, font=('FreeSerif 24'))
+            self.__tkLHora__ = tk.Label(self.master, text=self.HOURS, font=('FreeSerif 20'))
             self.__tkLHora__.grid(row=0, columnspan=2)
             #
-            self.__tkLDia__ = tk.Label(self.master, text=str(self.DATE + "("+self.WEEKDAY+")"), font=('FreeSerif 17'))
+            self.__tkLDia__ = tk.Label(self.master, text=str(self.DATE + "("+self.WEEKDAY+")"), font=('FreeSerif 13'))
             self.__tkLDia__.grid(row=2, columnspan=2)
-            tk.Button(self.master, text="Sair", font=('FreeSerif 10'), background="#eee", foreground="#000",command=self.out).grid(row=3, columnspan=2)
+            tk.Button(self.master, text="Sair", font=('FreeSerif 9'), background="#eee", foreground="#000",command=self.out).grid(row=3, columnspan=2)
             #
             self.__refresh__()
             #

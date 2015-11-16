@@ -20,7 +20,7 @@ class Computer(object):
             self.master = tk.Tk()
             self.master.title('Phoenix!')
             #
-            self.estilo = ('FreeSerif 10')  
+            self.estilo = ('FreeSerif 9')  
             self._distro_ = tk.Label(self.master,background='white', text='Distro:\n%s'%self.__distro__, font=self.estilo).grid(row=0)
             #
             _arch_ = tk.Label(self.master,background='white', text='Arquitetura:  %s'%self.__arch__, font=self.estilo).grid(row=2)
@@ -35,6 +35,7 @@ class Computer(object):
             #
             #
             self.master.geometry('170x140+1185+220')
+            self.master.wm_attributes("-topmost", 1)
             self.master.mainloop()
             #
         def out(self):
