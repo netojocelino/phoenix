@@ -24,6 +24,7 @@ class Alert:#(object):
                 #
                 self.master.geometry('200x120+500+400')
                 #
+                self.master.wm_attributes("-topmost", 1)
                 self.master.mainloop()
         #
         def __call__(self, titulo, msg, btn):
