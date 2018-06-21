@@ -1,8 +1,8 @@
 # PHOENIX
 
-[sourceforge](http://sourceforge.net/projects/phoenix-0) page
 
 A simple program to show hours, date and computer infos, how your distro, architeture and processor.
+Made with Python and idle time.
 
 Requirements
 =======
@@ -13,7 +13,6 @@ Requirements
 First [download here](https://github.com/netojocelino/phoenix/zipball/master), at terminal:
 
     wget https://github.com/netojocelino/phoenix/archive/master.zip
-or at [source forge](https://sourceforge.net/phoenix-0)
 
 now open the file if you prefer, open it by terminal
     python3 Phoenix.py
